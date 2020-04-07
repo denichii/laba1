@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>templates</title>
+
+</head>
+
+<body>
+<p id="elem">
+  GM!</p>
+
+<template id="tmpl">
+  <h3><content></content></h3>
+  <p>hi</p>
+  <script>
+    document.write('...document.write:Новость!');
+  </script>
+</template>
+
+<script>
+  var root = elem.createShadowRoot();
+  root.appendChild(tmpl.content.cloneNode(true));
+</script>
+</body>
+</html>
