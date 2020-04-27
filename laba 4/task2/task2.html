@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="task2.css">
+    <script src="task2.js"></script>
+    <title>Diagrama</title>
+</head>
+<div>
+    <aside class="left_menu">
+        <h1>Відстані обласних центрів від Києва</h1>
+        <table cellspacing="0" id="table">
+            <tr class="tr">
+                <th></th>
+                <th>Обласний центр</th>
+                <th>Відстань(км)</th>
+            </tr>
+            <tr class="tr">
+                <td class="td"><button class="delete_tr" id="vn">Видалити</button></td>
+                <td class="td">Вінниця</td>
+                <td class="td">268</td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><button class="delete_tr" id="sm">Видалити</button></td>
+                <td class="td">Суми</td>
+                <td class="td">333</td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><button class="delete_tr" id="ltsk">Видалити</button></td>
+                <td class="td">Луцьк</td>
+                <td class="td">418</td>
+            </tr>
+            <tr class="tr">
+                <td class="td"><button class="delete_tr" id="lvv">Видалити</button></td>
+                <td class="td">Львів</td>
+                <td class="td">540</td>
+            </tr>
+        </table>
+        <button class = "add" id="add_tr">Додати обласний центр</button>
+    </aside>
+
+    <div class="right_block">
+        <h1 class = "h2">Діаграма</h1>
+        <div id="diagrama">
+            <div class="block" style="height:49.6%;" title="49.6%"><p class="rotate">Вінниця</p></div>
+            <div class="block" style="height:61.6%;" title="61.6%"><p class="rotate">Суми</p></div>
+            <div class="block" style="height:77.4%;" title="77.4%"><p class="rotate">Луцьк</p></div>
+            <div class="block" style="height:100%;" title="100%"><p class="rotate">Львів</p></div>
+        </div>
+    </div>
+</body>
+</html>
